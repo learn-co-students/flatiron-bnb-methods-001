@@ -54,6 +54,7 @@ describe Reservation do
     end
 
     it 'validates that a listing is available at checkin before making reservation' do 
+      @invalid_checkin.avail
       expect(@invalid_checkin).to_not be_valid
     end
 
